@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://www.netbeans.org/ns/project/1">
+    <type>org.netbeans.modules.ant.freeform</type>
+    <configuration>
+        <general-data xmlns="http://www.netbeans.org/ns/freeform-project/1">
+            <name>Sistemaescolar</name>
+        </general-data>
+        <general-data xmlns="http://www.netbeans.org/ns/freeform-project/2">
+            <!-- Do not use Project Properties customizer when editing this file manually. -->
+            <name>Sistemaescolar</name>
+            <properties>
+                <property name="ant.script">C:\Play\framework\build.xml</property>
+                <property name="application.path">C:\Play\PROYECTOS\Sistemaescolar</property>
+                <property name="application.name">play netbeansify Sistemaescolar</property>
+            </properties>
+            <folders>
+                <source-folder>
+                    <label>.</label>
+                    <location>.</location>
+                    <encoding>UTF-8</encoding>
+                </source-folder>
+                <source-folder>
+                    <label>app</label>
+                    <type>java</type>
+                    <location>app</location>
+                    <encoding>UTF-8</encoding>
+                </source-folder>
+                <source-folder>
+                    <label>test</label>
+                    <type>java</type>
+                    <location>test</location>
+                    <encoding>UTF-8</encoding>
+                </source-folder>
+            </folders>
+            <ide-actions>
+                <action name="clean">
+                    <script>${ant.script}</script>
+                    <target>doNothing</target>
+                    <property name="application.path">${application.path}</property>
+                </action>
+                <action name="build">
+                    <script>${ant.script}</script>
+                    <target>doNothing</target>
+                    <property name="application.path">${application.path}</property>
+                </action>
+                <action name="rebuild">
+                    <script>${ant.script}</script>
+                    <target>doNothing</target>
+                    <property name="application.path">${application.path}</property>
+                </action>
+                <action name="run">
+                    <script>${ant.script}</script>
+                    <target>nb-run-application</target>
+                    <property name="application.path">${application.path}</property>
+                </action>
+                <action name="debug">
+                    <script>${ant.script}</script>
+                    <target>nb-debug</target>
+                    <property name="application.name">${application.name}</property>
+                    <property name="application.path">${application.path}</property>
+                </action>
+                <action name="test">
+                    <script>${ant.script}</script>
+                    <target>test-application</target>
+                    <property name="application.path">${application.path}</property>
+                </action>
+            </ide-actions>
+            <view>
+                <items>
+                    <source-folder style="packages">
+                        <label>app</label>
+                        <location>app</location>
+                        <excludes>views/**</excludes>
+                    </source-folder>
+                    <source-folder style="tree">
+                        <label>app/views</label>
+                        <location>app/views</location>
+                    </source-folder>
+                    <source-folder style="tree">
+                        <label>public</label>
+                        <location>public</location>
+                    </source-folder>
+                    <source-folder style="tree">
+                        <label>conf</label>
+                        <location>conf</location>
+                    </source-folder>
+                    <source-folder style="packages">
+                        <label>test</label>
+                        <location>test</location>
+                    </source-folder>
+                </items>
+                <context-menu>
+                    <ide-action name="run"/>
+                    <ide-action name="debug"/>
+                    <ide-action name="test"/>
+                </context-menu>
+            </view>
+            <subprojects/>
+        </general-data>
+        <java-data xmlns="http://www.netbeans.org/ns/freeform-project-java/2">
+            <compilation-unit>
+                <package-root>app</package-root>
+                <package-root>test</package-root>
+                <classpath mode="compile">C:\Play\PROYECTOS\Sistemaescolar\conf;C:\Play\framework\play-master-f86d581.jar;C:\Play\framework\lib\activation-1.1.1.jar;C:\Play\framework\lib\antlr-2.7.6.jar;C:\Play\framework\lib\asm-all-3.3.1.jar;C:\Play\framework\lib\async-http-client-1.6.5.jar;C:\Play\framework\lib\barbecue-1.5-beta1.jar;C:\Play\framework\lib\bcprov-jdk15-1.45.jar;C:\Play\framework\lib\bytecodeparser-0.2.jar;C:\Play\framework\lib\c3p0-0.9.1.2.jar;C:\Play\framework\lib\cglib-nodep-2.2.jar;C:\Play\framework\lib\commons-beanutils-1.8.3.jar;C:\Play\framework\lib\commons-codec-1.4.jar;C:\Play\framework\lib\commons-collections-3.2.1.jar;C:\Play\framework\lib\commons-digester-1.7.jar;C:\Play\framework\lib\commons-email-1.2.jar;C:\Play\framework\lib\commons-fileupload-1.2.2.jar;C:\Play\framework\lib\commons-io-2.0.1.jar;C:\Play\framework\lib\commons-javaflow-1209105.jar;C:\Play\framework\lib\commons-jexl-2.0.1.jar;C:\Play\framework\lib\commons-lang-2.6.jar;C:\Play\framework\lib\commons-logging-1.1.1.jar;C:\Play\framework\lib\dom4j-1.6.1.jar;C:\Play\framework\lib\ehcache-core-2.0.0.jar;C:\Play\framework\lib\ezmorph-1.0.3.jar;C:\Play\framework\lib\geronimo-servlet_2.5_spec-1.2.jar;C:\Play\framework\lib\groovy-all-1.8.4.jar;C:\Play\framework\lib\gson-1.7.1.jar;C:\Play\framework\lib\guava-13.0.1.jar;C:\Play\framework\lib\h2-1.3.149.jar;C:\Play\framework\lib\hibernate-commons-annotations-3.2.0.Final.jar;C:\Play\framework\lib\hibernate-core-3.6.1.Final.jar;C:\Play\framework\lib\hibernate-entitymanager-3.6.0.Final.jar;C:\Play\framework\lib\hibernate-jpa-2.0-api-1.0.0.Final.jar;C:\Play\framework\lib\iReport.jar;C:\Play\framework\lib\itext-2.1.7.jar;C:\Play\framework\lib\ivy-2.2.0.jar;C:\Play\framework\lib\jamon-2.7.jar;C:\Play\framework\lib\jasperreports-4.0.1.jar;C:\Play\framework\lib\jasperreports-fonts-light.jar;C:\Play\framework\lib\javassist-3.15.0.GA.jar;C:\Play\framework\lib\javax.inject-1.0.jar;C:\Play\framework\lib\javax.mail.jar;C:\Play\framework\lib\jaxen-1.1.jar;C:\Play\framework\lib\jdom.jar;C:\Play\framework\lib\jj-imaging.jar;C:\Play\framework\lib\jj-simplecaptcha.jar;C:\Play\framework\lib\jj-textile.jar;C:\Play\framework\lib\jj-wikitext.jar;C:\Play\framework\lib\joda-time-2.0.jar;C:\Play\framework\lib\jregex-1.2_01.jar;C:\Play\framework\lib\jsr107cache-1.0.jar;C:\Play\framework\lib\jta-1.1.jar;C:\Play\framework\lib\jtds-1.2.5.jar;C:\Play\framework\lib\jtds-1.2.6.jar;C:\Play\framework\lib\junit-4.8.1.jar;C:\Play\framework\lib\jxl-2.6.10.jar;C:\Play\framework\lib\jxls-core-1.0-RC-1.jar;C:\Play\framework\lib\log4j-1.2.16.jar;C:\Play\framework\lib\memcached-2.6.jar;C:\Play\framework\lib\mysql-connector-java-8.0.22.jar;C:\Play\framework\lib\netty-3.2.6.Final.jar;C:\Play\framework\lib\org.eclipse.jdt.core-3.8.0.v_C18.jar;C:\Play\framework\lib\oval-1.50.jar;C:\Play\framework\lib\poi-3.6-20091214.jar;C:\Play\framework\lib\poi-3.8-20120326.jar;C:\Play\framework\lib\poi-examples-3.8-20120326.jar;C:\Play\framework\lib\poi-excelant-3.8-20120326.jar;C:\Play\framework\lib\poi-ooxml-3.6-20091214.jar;C:\Play\framework\lib\poi-ooxml-3.8-20120326.jar;C:\Play\framework\lib\poi-ooxml-schemas-3.8-20120326.jar;C:\Play\framework\lib\poi-scratchpad-3.8-20120326.jar;C:\Play\framework\lib\postgresql-9.0.jar;C:\Play\framework\lib\signpost-core-1.2.jar;C:\Play\framework\lib\slf4j-api-1.6.1.jar;C:\Play\framework\lib\slf4j-log4j12-1.6.1.jar;C:\Play\framework\lib\snakeyaml-1.7.jar;C:\Play\framework\lib\sqljdbc.jar;C:\Play\framework\lib\sqljdbc4.jar;C:\Play\framework\lib\stax-api-1.0.1.jar;C:\Play\framework\lib\xmlbeans-2.3.0.jar;C:\Play\framework\lib\xstream-1.3.jar;nbproject\classes;C:\Play\framework\src</classpath>
+                <built-to>nbproject/classes</built-to>
+                <source-level>1.5</source-level>
+            </compilation-unit>
+        </java-data>
+    </configuration>
+</project>

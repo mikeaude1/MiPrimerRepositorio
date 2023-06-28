@@ -1,0 +1,36 @@
+#{extends 'main.html' /}
+#{set title:'Hola Mundo' /}
+#{set color:'skyblue' /}
+
+Soy la Lechuga
+${persona.id}
+<br>
+-----------------------------<br>
+${persona.Nombre}<br>
+Lista<br>
+<table>
+    <thead>
+        <tr>
+            <th>Nombre</th>
+            <th>Apellido paterno</th>
+            <th>Apelldo materno</th>
+        </tr>
+    </thead>
+    <tbody>
+        
+        #{list personas,as:'p'}
+        <tr>
+            <td>${p.Nombre}</td>
+            <td>${p.ApellidoPaterno}</td>
+            <td>${p.ApellidoMaterno}</td>
+        <tr>
+        #{/list}
+    
+</tbody>
+</table>
+<h2>Personas por Matrícula</h2>
+<ul>
+    #{list items:personasPorMatricula, as:'persona'}
+        <li>${persona.nombre} ${persona.apellidoPaterno} ${persona.apellidoMaterno}</li>
+    #{/list}
+</ul>
