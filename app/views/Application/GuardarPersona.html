@@ -1,0 +1,48 @@
+#{extends 'main.html' /}
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+<html>
+    <head>
+        <title>Inscripcion Del Alumno Axitosa</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body class="metro">
+        <div class="grid bg-blue">
+            <div class="row">
+
+                <div class="panel span12">
+                    <div class="panel-header bg-indigo fg-white icon-cc-by">
+                        Inscripcion del alumno exitosa
+                    </div>
+                </div>
+                <div class="row">
+
+                    <div class="panel span6" data-role="panel">
+                        <div class="panel-header bg-indigo fg-white icon-cc-by">
+                            Informacion del Alumno
+                        </div>
+                        <div class="panel-content fg-indigo fn-bolder bg-white ">
+                            El alumno el alumno que  se ah dado de alta es ${persona1.Nombre} ${persona1.ApellidoPaterno} ${persona1.ApellidoMaterno}
+                        </div>
+                    </div>
+
+
+                    <div class="panel span6" data-role="panel">
+                        <div class="panel-header bg-indigo fg-white icon-cc-by">
+                            Informacion de la Inscripcion
+                        </div>
+                        <div class="panel-content fg-indigo fn-bolder bg-white">
+                            El alumno ${alumno1.Persona.Nombre}
+                            ${alumno1.Persona.ApellidoPaterno}
+                            ${alumno1.Persona.ApellidoMaterno}
+                            Se ah inscrito Correctamente al Grupo  ${historialalumno1.grupo.Nombre}
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </body>
+</html>

@@ -4,128 +4,130 @@
     <head>
         <title>#{get 'title' /}</title>
         <meta charset="${_response_encoding}">
-        
+
         <link rel="stylesheet" media="screen" href="@{'/public/stylesheets/main.css'}">
         #{get 'moreStyles' /}
         <link rel="shortcut icon" type="image/png" href="@{'/public/images/favicon.png'}">
         <script src="@{'/public/javascripts/jquery-1.6.4.min.js'}" type="text/javascript" charset="${_response_encoding}"></script>
         <script src="/public/javascripts/jquery.min.js"></script>
-    <script src="/public/javascripts/jquery.widget.min.js"></script>
-    <script src="/public/javascripts/metro.min.js"></script>
-    <link href="/public/images/iconFont.css" rel="stylesheet">
-     <link href="/public/images/metro-bootstrap-responsive.css" rel="stylesheet">
-    <link  href="/public/images/metro-bootstrap.css" rel="stylesheet">
-    <link href="@{'/public/images/fonts/iconFont.woff'}" rel="stylesheet">
-<link rel="stylesheet" href="@{'/public/images/fonts/metroSysIcons.woff'}">
-<link href="@{'/public/images/fonts/iconFont.ttf'}" rel="stylesheet">
-<link rel="stylesheet" href="@{'/public/images/fonts/metroSysIcons.ttf'}">
-    
+        <script src="/public/javascripts/jquery.widget.min.js"></script>
+        <script src="/public/javascripts/metro.min.js"></script>
+        <link href="/public/images/iconFont.css" rel="stylesheet">
+        <link href="/public/images/metro-bootstrap-responsive.css" rel="stylesheet">
+        <link  href="/public/images/metro-bootstrap.css" rel="stylesheet">
+        <link href="@{'/public/images/fonts/iconFont.woff'}" rel="stylesheet">
+        <link rel="stylesheet" href="@{'/public/images/fonts/metroSysIcons.woff'}">
+        <link href="@{'/public/images/fonts/iconFont.ttf'}" rel="stylesheet">
+        <link rel="stylesheet" href="@{'/public/images/fonts/metroSysIcons.ttf'}">
+
         #{get 'moreScripts' /}
     </head>
     <body class="metro">
-       <nav class="navigation-bar">
-    <nav class="navigation-bar-content">
-        <div class="element">
-            <a class="dropdown-toggle" href="#">Sistema Escolar <img  class="element image-button image-left place-right" </a>
-            <ul class="dropdown-menu" data-role="dropdown">
-                <li><a href="#" ::after>"Main"
-                   
-                    </a>
-                    <ul class="place-right" data-role="dropdown" >
-                        #Lisa
-                        <li> Informacion</li>
-                        <li>Carreras</li>
-                        <li>Tienda</li>
-                        <li>Inscripciones</li>
-                        <li>Correo</li>
-                    </ul>
+        <div class="grid">
+            <nav class="navigation-bar">
+                <nav class="navigation-bar-content">
+                    <div class="element">
+                        <a class="dropdown-toggle" href="#">Sistema Escolar <img  class="element image-button image-left place-right" </a>
+                            <ul class="dropdown-menu" data-role="dropdown">
+                                <li><a href="#" ::after>"Main"
 
-                </li>
-                <li><a href="#">Index</a></li>
-                <li class="divider"></li>
-                <li><a href="#">Alumnos</a></li>
-                <li class="Informacion del Alumno"></li>
-                <li><a href="#">Resultado de la Consulta</a></li>
-            </ul>
-        </div>
- 
-        <span class="element-divider"></span>
-            <a class="element brand" href="#">Tablas</a>
-            <a class="element brand" href="#">Alumnos </a>
-            <a class="element brand" href="#">Docentes</a>
-            <a class="element brand" href="#">Inscripciones</a>
-            <a class="element brand" href="#">Carreras</a>
-        <div class="element input-element">
-            <form>
-                <div class="input-control text">
-                    <input type="text" placeholder="Buscar...">
-                    <button class="btn-search"></button>
+                                    </a>
+                                    <ul class="place-right" data-role="dropdown" >
+                                        #Lisa
+                                        <li> Informacion</li>
+                                        <li>Carreras</li>
+                                        <li>Tienda</li>
+                                        <li>Inscripciones</li>
+                                        <li>Correo</li>
+                                    </ul>
+
+                                </li>
+                                <li><a href="#">Index</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#">Alumnos</a></li>
+                                <li class="Informacion del Alumno"></li>
+                                <li><a href="#">Resultado de la Consulta</a></li>
+                            </ul>
+                    </div>
+
+                    <span class="element-divider"></span>
+                    <a class="element brand" href="#">Tablas</a>
+                    <a class="element brand" href="#">Alumnos </a>
+                    <a class="element brand" href="#">Docentes</a>
+                    <a class="element brand" href="#">Inscripciones</a>
+                    <a class="element brand" href="#">Carreras</a>
+                    <div class="element input-element">
+                        <form>
+                            <div class="input-control text">
+                                <input type="text" placeholder="Buscar...">
+                                <button class="btn-search"></button>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="element place-right">
+                        <a class="dropdown-toggle" href="#">
+                            Mi Cuenta
+                        </a>
+                        <ul class="dropdown-menu place-right" data-role="dropdown">
+                            <li><a href="#">Products</a></li>
+                            <li><a href="#">Download</a></li>
+                            <li><a href="#">Support</a></li>
+                            <li><a href="#">Buy Now</a></li>
+                        </ul>
+                    </div>
+                    <span class="element-divider place-right"></span>
+                    <a class="element place-right" href="#"><span class="icon-locked-2"></span></a>
+                    <span class="element-divider place-right"></span>
+                    <button class="element image-button image-left place-right">
+                        Correo Universitario
+                        <img src="data:image/png;base64,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"/>
+                    </button>
+                </nav>
+            </nav>
+            soy el pan
+            #{doLayout /}
+            soy la lechuga
+            <div class="span4 bg-blue fg-white fn-bolder" >
+                <div class="page">
+                    <div class="page-content">
+                        <nav class="sidebar rigth">
+                            <ul>
+                                <li class="title">Items Group 1</li>
+                                <li class="active"><a href="#"><i class="icon-home"></i>Dashboard</a></li>
+                                <li class="stick bg-red"><a href="#"><i class="icon-cog"></i>Layouts</a></li>
+                                <li class="stick bg-yellow">
+                                    <a class="dropdown-toggle" href="#"><i class="icon-tree-view"></i>Sub menu</a>
+                                    <ul class="dropdown-menu" data-role="dropdown">
+                                        <li><a href="">Subitem 1</a></li>
+                                        <li><a href="">Subitem 2</a></li>
+                                        <li><a href="">Subitem 3</a></li>
+                                        <li class="divider"></li>
+                                        <li><a href="">Subitem 4</a></li>
+                                        <li class="disabled"><a href="">Subitem 4</a></li>
+                                    </ul>
+                                </li>
+                                <li class="stick bg-green"><a href="#">Thread item</a></li>
+                                <li class="disabled"><a href="#">Disabled item</a></li>
+
+                                <li class="title">Items Group 2</li>
+                                <li><a href="#">Other Item 1</a></li>
+                                <li><a href="#">Other item 2</a></li>
+                                <li><a href="#">Other item 3</a></li>
+                                <li>
+                                    <a class="dropdown-toggle" href="#">Sub menu 2</a>
+                                    <ul class="dropdown-menu" data-role="dropdown">
+                                        <li><a href="">Subitem 1</a></li>
+                                        <li><a href="">Subitem 2</a></li>
+                                        <li><a href="">Subitem 3</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </nav>
+                        <button class="bg-blue">Hola</button>
+                    </div>
                 </div>
-            </form>
-        </div>
- 
-        <div class="element place-right">
-            <a class="dropdown-toggle" href="#">
-                Mi Cuenta
-            </a>
-            <ul class="dropdown-menu place-right" data-role="dropdown">
-                <li><a href="#">Products</a></li>
-                <li><a href="#">Download</a></li>
-                <li><a href="#">Support</a></li>
-                <li><a href="#">Buy Now</a></li>
-            </ul>
-        </div>
-        <span class="element-divider place-right"></span>
-        <a class="element place-right" href="#"><span class="icon-locked-2"></span></a>
-        <span class="element-divider place-right"></span>
-        <button class="element image-button image-left place-right">
-            Correo Universitario
-            <img src="data:image/png;base64,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"/>
-        </button>
-    </nav>
-</nav>
-        soy el pan
-        #{doLayout /}
-        soy la lechuga
-        <div class="span12 bg-blue fg-white fn-bolder" >
-             <div class="page">
-            <div class="page-content">
-            <nav class="sidebar rigth">
-    <ul>
-        <li class="title">Items Group 1</li>
-        <li class="active"><a href="#"><i class="icon-home"></i>Dashboard</a></li>
-        <li class="stick bg-red"><a href="#"><i class="icon-cog"></i>Layouts</a></li>
-        <li class="stick bg-yellow">
-            <a class="dropdown-toggle" href="#"><i class="icon-tree-view"></i>Sub menu</a>
-            <ul class="dropdown-menu" data-role="dropdown">
-                <li><a href="">Subitem 1</a></li>
-                <li><a href="">Subitem 2</a></li>
-                <li><a href="">Subitem 3</a></li>
-                <li class="divider"></li>
-                <li><a href="">Subitem 4</a></li>
-                <li class="disabled"><a href="">Subitem 4</a></li>
-            </ul>
-        </li>
-        <li class="stick bg-green"><a href="#">Thread item</a></li>
-        <li class="disabled"><a href="#">Disabled item</a></li>
- 
-        <li class="title">Items Group 2</li>
-        <li><a href="#">Other Item 1</a></li>
-        <li><a href="#">Other item 2</a></li>
-        <li><a href="#">Other item 3</a></li>
-        <li>
-            <a class="dropdown-toggle" href="#">Sub menu 2</a>
-            <ul class="dropdown-menu" data-role="dropdown">
-                <li><a href="">Subitem 1</a></li>
-                <li><a href="">Subitem 2</a></li>
-                <li><a href="">Subitem 3</a></li>
-            </ul>
-        </li>
-    </ul>
-</nav>
-            <button class="bg-blue">Hola</button>
-        </div>
-             </div>
+            </div>
         </div>
     </body>
 </html>

@@ -11,20 +11,78 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body metro>
-        <div class="grid">
+        <div class="grid fluid">
             <div class="row">
                 <div class="Span12">
                     <form action="/Application/Vista2">
-                    <h1>Busqueda de grupo</h1>
-                    <div class="row">
-                        <div class="span6">
-                            <input type="text" name ="grupo">
+                        <h1>Busqueda de grupo</h1>
+                        <div class="row">
+                            <div class="span6">
+                                <input type="text" name ="grupo">
+                            </div>
+                            <div class="span6">
+                                <button type="submit"  >"Guardar"</button>
+                            </div>
                         </div>
-                         <div class="span6">
-                             <button type="submit"  >"Guardar"</button>
-                        </div>
-                    </div>
                     </form>
+                </div>
+                <div class="panel">
+                    <div class="panel-header fg-white bg-darkTeal">
+                        Persona
+                    </div>
+                    <div class="panel-content">
+                        <form action="/Application/GuardarPersona">
+                            <div class="row">
+                                <div class="span4">
+                                    <label for="nombre">Nombre</label>
+                                    <input type="text" data-transform="input-control" name="nombre"><br>
+                                </div>
+                                <div class="span4">
+                                    <label for="apellidopaterno">Apellido Paterno</label>
+                                    <input type="text" data-transform="input-control" name="apellidopaterno">
+                                </div>
+                                <div class="span4">
+                                    <label for="apellidomaterno">Apellido Materno</label>
+                                    <input type="text" data-transform="input-control" name="apellidomaterno">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="span12">
+                                    <button class="button fg-white bg-darkBlue place-right">Guardar</button>
+                                </div>
+                                <div class="row">
+
+                                    <div class="input-control select span3">
+                                        <label>Selecciona el Periodo en el que deseas Inscribir al almuno</label>
+                                        <select>
+                                            #{list periodo,as: 'p'}
+                                            <option value="${p.id}">${p.Nombre}</option>
+                                            #{/list}
+                                        </select>
+                                    </div>
+
+                                    <div class="input-control select span3">
+                                        <label>Selecciona el Grupo en el que deseas Inscribir al almuno</label>
+                                        <select>
+                                            #{list Grupo2,as: 'g'}
+                                            <option value="${g.id}">${g.Nombre}</option>
+                                            #{/list}
+                                        </select>
+                                    </div>
+
+                                    <div class="span3">
+                                        <label for='grupo'>Escribe el Grupo en el que deseas Inscribir al almuno</label>
+                                        <input type="text" data-transform="input-control" name="grupo">
+                                    </div>
+                                    <div class="span3">
+                                        <label for='matricula'>Escribe la Matricula del almuno</label>
+                                        <br>
+                                        <input type="text" data-transform="input-control" name="matricula">
+                                    </div>
+
+                                </div>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
