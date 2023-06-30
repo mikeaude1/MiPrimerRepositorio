@@ -21,7 +21,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
                     </a>
                      
                     <ul class="place-right" data-role="dropdown" >
-                       #{list menus, as:'m'}
+                       #{list menu, as:'m'}
                         <li><a href="${m.Ruta}">${m.Nombre}</a></li>
                          #{/list}
                     </ul>
@@ -72,11 +72,7 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
     </nav>
 </nav>
         soy el pan
-       <ul>
-           #{list menu, as:'m'}
-           <li><a href="${m.Ruta}">${m.Nombre}</a></li>
-           #{/list}
-        </ul>
+       
         soy la lechuga
          
     </body>
